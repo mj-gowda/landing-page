@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 
 const HeroSection = () => {
   const images = [
-    './hero3.png',
-    './hero3.png',
+    './hero1.png',
+    './hero2.png',
     './hero3.png',
     // Add more image paths as needed
   ];
