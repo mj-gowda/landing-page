@@ -1,0 +1,69 @@
+@keyframes rotateScale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(90deg) scale(1.5);
+    }
+    50% {
+      transform: rotate(180deg) scale(1);
+    }
+    75% {
+      transform: rotate(270deg) scale(1.5);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+
+.logo {
+    margin: 150px auto; 
+    width: 100px;
+    height: 100px;
+    animation: rotateScale 6s linear infinite;
+
+    .square {
+      position: relative;
+      width:100px;
+      height: 100px;
+    }
+  
+    .triangle-up,
+    .triangle-down,
+    .triangle-left,
+    .triangle-right {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+  
+    .triangle-up {
+      border-width: 0 50px 50px 50px;
+      border-color: transparent transparent rgb(239, 65, 65) transparent;
+      top: 50%;
+      left: 0;
+    }
+  
+    .triangle-down {
+      border-width: 50px 50px 0 50px;
+      border-color: rgb(105, 218, 40) transparent transparent transparent;
+      bottom: 50%;
+      left: 0;
+    }
+  
+    .triangle-left {
+      border-width: 50px 0 50px 50px;
+      border-color: transparent transparent transparent rgb(54, 130, 230);
+      top: 0;
+      left: 0;
+    }
+  
+    .triangle-right {
+      border-width: 50px 50px 50px 0;
+      border-color: transparent rgb(233, 247, 84) transparent transparent;
+      top: 0;
+      right: 0;
+    }
+  }
+  

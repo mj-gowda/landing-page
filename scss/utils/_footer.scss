@@ -1,0 +1,49 @@
+$primary-color: #5D6273;
+$secondary-color: white;
+$divider-color: white;
+$footer-color: rgba(255, 255, 255, 0.80);
+
+.footer {
+    width: 100%;
+    height: 100%;
+    padding: 80px 100px;
+    background: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 23px;
+
+    .menu-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 96px;
+    padding-bottom: 30px;
+    
+        .menu-item {
+            color: $secondary-color;
+            font-size: 16px;
+            font-family: 'Noto Sans';
+            font-weight: 600;
+            line-height: 25.60px;
+            letter-spacing: 4.80px;
+            word-wrap: break-word;
+        }
+      }
+
+    .break{
+    width: 1000px;
+    height: 4px;
+    background: $divider-color;
+    }
+
+    .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+
+    }
+}
